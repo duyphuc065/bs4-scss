@@ -1,0 +1,393 @@
+.projects {
+
+    .projects__start,
+    .projects__fondue,
+    .projects__louis,
+    .projects__p22,
+    .projects__sesann,
+    .projects__alessi,
+    .projects__potter,
+    .projects__tabano,
+    .projects__fiji,
+    .projects__timeline,
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .projects__start {
+        min-height: 500px;
+
+        ul {
+            list-style-type: none;
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translateY(-50%);
+
+            li {
+
+                a {
+                    @include text($color-white-0, $fs-0, $fw-bold-0);
+                    text-decoration: none;
+
+                    .icon {
+                        width: 19px;
+                        margin-right: $mg-1;
+                        visibility: hidden;
+                        display: inline-block;
+                        left: 20px;
+                    }
+
+                    &:hover {
+                        color: $color-black-0;
+
+                        .icon {
+                            visibility: visible;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        h1 {
+            position: absolute;
+            bottom: 20%;
+            right: 20%;
+            @include text($color-white-0, $fs-3, $fw-bold-0);
+        }
+    }
+
+    .projects__fondue {
+        min-height: 500px;
+
+
+        .content {
+            padding: 65px;
+        }
+
+
+
+        .view {
+            padding: 65px;
+            top: 40%;
+
+            a {
+                display: flex;
+            }
+        }
+
+
+
+        .heart {
+            text-align: center;
+            padding: 65px;
+            bottom: 0;
+            left: 10%;
+
+        }
+    }
+
+    .projects__louis {
+        min-height: 471px;
+        text-transform: uppercase;
+
+        .content {
+            padding: 32px;
+
+            h1 {
+                color: $color-white-0;
+            }
+
+            p {
+                color: $color-white-0;
+
+                span {
+                    color: $color-white-0;
+                }
+            }
+        }
+
+        .view {
+            padding: 32px;
+            top: 28%;
+
+            h2 {
+                color: $color-white-0;
+            }
+
+            a {
+                display: flex;
+                color: $color-white-0;
+            }
+        }
+
+
+
+        .heart {
+            text-align: center;
+            padding: 32px;
+            top: 40%;
+            left: 20%;
+
+            i {
+                color: $color-white-0;
+            }
+        }
+    }
+
+    .projects__p22 {
+        min-height: 471px;
+
+
+        .content {
+            right: 25%;
+            padding: 55px;
+        }
+
+        .view {
+            right: 0;
+            padding: 55px;
+            top: 1%;
+
+            a {
+                display: flex;
+            }
+        }
+
+
+
+        .heart {
+            right: 7%;
+            text-align: center;
+            padding: 55px;
+            top: 10%;
+
+
+        }
+    }
+
+    .projects__potter {
+        min-height: 250px;
+        text-transform: uppercase;
+
+        .content {
+            padding: 32px;
+            width: 240px;
+        }
+
+        .view {
+            padding: 32px;
+            bottom: 10%;
+
+            a {
+                display: flex;
+            }
+        }
+
+        .heart {
+            padding: 0 32px;
+            bottom: 0;
+            text-align: center;
+            left: 10%;
+
+            p {
+                @include text($color-red, $fs-0, $fw-light);
+            }
+        }
+    }
+
+    .projects__tabano {
+        min-height: 465px;
+        text-transform: uppercase;
+
+        .content {
+            padding: 32px;
+            width: 240px;
+            bottom: 0;
+        }
+
+        .view {
+            padding: 0 32px;
+            bottom: 13%;
+            left: 44%;
+
+            a {
+                display: flex;
+            }
+        }
+
+        .heart {
+            padding: 0 32px;
+            bottom: 8%;
+            text-align: center;
+            right: 0;
+
+            p {
+                @include text($color-red, $fs-0, $fw-light);
+            }
+        }
+
+    }
+
+    .projects__fiji {
+        min-height: 256px;
+        text-transform: uppercase;
+
+        .content {
+            padding: 32px;
+            width: 240px;
+            left: 44%;
+        }
+
+        .view {
+            padding: 0 32px;
+            bottom: 25%;
+            left: 44%;
+
+            a {
+                display: flex;
+            }
+        }
+
+        .heart {
+            padding: 0 32px;
+            bottom: 0;
+            text-align: center;
+            right: 20%;
+
+            p {
+                @include text($color-red, $fs-0, $fw-light);
+            }
+        }
+
+    }
+
+    .projects__sesann {
+        min-height: 300px;
+        text-transform: uppercase;
+
+        .content {
+            padding: 32px;
+            width: 240px;
+            bottom: 0;
+        }
+
+        .view {
+            padding: 0 32px;
+            bottom: 23%;
+            left: 44%;
+
+            a {
+                display: flex;
+            }
+        }
+
+        .heart {
+            padding: 0 32px;
+            bottom: 0;
+            text-align: center;
+            right: 30%;
+
+            p {
+                @include text($color-red, $fs-0, $fw-light);
+            }
+        }
+    }
+
+    .projects__alessi {
+        min-height: 300px;
+        text-transform: uppercase;
+
+        .content {
+            padding: 32px;
+            width: 240px;
+            left: 44%;
+        }
+
+        .view {
+            padding: 0 32px;
+            bottom: 25%;
+            left: 40%;
+
+            a {
+                display: flex;
+            }
+        }
+
+        .heart {
+            padding: 0 32px;
+            bottom: 0;
+            text-align: center;
+            right: 20%;
+
+            p {
+                @include text($color-red, $fs-0, $fw-light);
+            }
+        }
+    }
+
+
+    .projects__timeline {
+        min-height: 300px;
+
+        ul {
+            list-style-type: none;
+            position: absolute;
+            top: 35%;
+            left: 15%;
+            transform: translateY(-50%);
+
+            li {
+
+                a {
+                    @include text($color-white-0, $fs-0, $fw-bold-0);
+                    text-decoration: none;
+
+                    .icon {
+                        width: 19px;
+                        margin-right: $mg-1;
+                        visibility: hidden;
+                        display: inline-block;
+                        left: 20px;
+                    }
+
+                    &:hover {
+                        color: $color-white-0;
+
+                        .icon {
+                            visibility: visible;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        h3 {
+            position: absolute;
+            top: 15%;
+            left: 22%;
+            @include text($color-black-0, $fs-0, $fw-bold-0);
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .projects {
+        .projects__sesann {
+            .content {
+                padding: 0;
+                width: 100%;
+            }
+        }
+       .projects__alessi{
+           .heart{
+               bottom:10%;
+               right:28%;
+           }
+       }
+    }
+}

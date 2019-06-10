@@ -1,0 +1,96 @@
+.staff {
+    background-color: $color-grey;
+
+    .staff__content {
+        padding: 60px 0 60px 180px;
+
+        h3 {
+            @include text($color-black-0, $fs-4, $fw-bold-0);
+        }
+
+        p {
+            @include text($color-black-0, $fs-4, $fw-light);
+        }
+    }
+
+    .staff__wrap {
+        display: flex;
+        padding: 60px 180px 60px 0;
+
+        .card {
+            border: none;
+            border-radius: 0;
+
+            .card-body {
+                padding: 20px 0;
+                background-color: $color-grey;
+
+                .card-title {
+                    @include text($color-black-0, $fs-4, $fw-bold-1);
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+                .card-text{
+                    text-transform: uppercase;
+                }
+            }
+
+            .staff__social {
+                display: flex;
+                a {
+                    text-decoration: none;
+                    h2 {
+                        @include text($color-orange-2, $fs-4, $fw-bold-0);
+                        display: inline-block;
+                    }
+                }
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    margin-left: 55px;
+    
+                    li {
+                        margin-left: 10px;
+    
+                        a {
+                            color: $color-orange-2;
+    
+                            i {
+                                font-size: 18px;
+                            }
+    
+                            &:hover {
+                                .fa-facebook {
+                                    color: #3b5998;
+                                }
+    
+                                .fa-twitter {
+                                    color: #55acee;
+                                }
+    
+                                .fa-instagram {
+                                    color: $color-orange-2;
+                                }
+    
+                                .fa-google-plus {
+                                    color: $color-red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .staff{
+        .staff__content{
+            padding:80px;
+        }
+        .staff__wrap{
+            display: block;
+            padding:60px;
+        }
+    }
+}

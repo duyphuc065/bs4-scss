@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+}
+body{
+    background-color:white;
+    .cd-top {
+        background-image: url("../img/arrowup.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .cd-top.cd-top--show {
+        visibility: visible;
+        opacity: 1;
+    }
+}

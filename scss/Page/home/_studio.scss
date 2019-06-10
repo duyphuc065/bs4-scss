@@ -1,0 +1,50 @@
+.studio{
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;}
+        .studio__name{
+            position: relative;
+            img{min-height:550px;}
+          
+            h1{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translateY(-50%,-50%);
+                @include text($color-white-0,$fs-3,$fw-bold-0);
+            }
+        }
+        .studio__content{
+            background-color: $color-grey;
+            padding:80px 180px 80px 80px;
+           .studio__detail{
+              @include text($color-black-0,$fs-4,$fw-light);
+              .studio__italic{
+                  @include text($color-black-0,$fs-4,$fw-bold-0);
+                  font-style: italic;
+              }
+
+           }          
+           
+        }
+        .studio__award{
+            h4{
+                @include text($color-black-0,$fs-4,$fw-bold-1);
+                border-bottom:1px solid $color-black-0;
+                margin-top:$mg-2;
+            }
+            .award__content{
+                display: flex;
+                padding-top:30px;
+            }
+        }
+
+}
+@media screen and (max-width:768px){
+    .studio{
+        .studio__content{
+            padding:80px;
+        }
+    }
+}
